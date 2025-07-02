@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Alura Immersion - Java Sticker Generator
 A collection of my projects during the Alura Immersion, a hands-on course in Java focused on building practical applications such as the Java Sticker Generator.
 
@@ -20,3 +21,6 @@ During the **Alura Java Immersion**, the goal was to create an application that 
 6. **Cloud Deployment**: Deploying the application to Heroku to make it publicly accessible.
 
 
+=======
+# Stickers_Imension
+>>>>>>> 3f9f22dc416646baa1053c867a56108ecfb62d8d
