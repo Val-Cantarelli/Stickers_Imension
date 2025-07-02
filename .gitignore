@@ -1,0 +1,9 @@
+
+/build/
+#  Gradle
+.gradle/
+#IntelliJ IDEA
+.idea/
+# backup
+*.bak
+*.swp
