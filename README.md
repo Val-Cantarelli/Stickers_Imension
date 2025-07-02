@@ -1,6 +1,5 @@
-<<<<<<< HEAD
+
 # Alura Immersion - Java Sticker Generator
-A collection of my projects during the Alura Immersion, a hands-on course in Java focused on building practical applications such as the Java Sticker Generator.
 
 ## Overview
 During the **Alura Java Immersion**, the goal was to create an application that generates stickers for WhatsApp. This project involved consuming the IMDb API to get movie information and generating custom stickers based on that data. The course provided an opportunity to dive into practical Java development while solving real-world challenges.
@@ -20,7 +19,3 @@ During the **Alura Java Immersion**, the goal was to create an application that 
 5. **Creating a RESTful API**: Building a Spring Boot API to expose the movie data and allow interaction with the app.
 6. **Cloud Deployment**: Deploying the application to Heroku to make it publicly accessible.
 
-
-=======
-# Stickers_Imension
->>>>>>> 3f9f22dc416646baa1053c867a56108ecfb62d8d
