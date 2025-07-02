@@ -8,7 +8,7 @@ During the **Alura Java Immersion**, the goal was to create an application that 
 - **Java 17**: Primary programming language for building the application.
 - **Spring Boot**: Framework used to build the RESTful API.
 - **MongoDB**: NoSQL database to store data.
-- **Heroku**: Platform for deploying the application to the cloud.
+- **Heroku**:(Heroku discontinued its free tier) Platform for deploying the application to the cloud.
 - **Git**: Version control for the project code.
 
 ## Key Challenges
