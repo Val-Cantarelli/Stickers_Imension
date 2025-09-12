@@ -1,21 +1,69 @@
 
-# Alura Immersion - Java Sticker Generator
+---
 
-## Overview
-During the **Alura Java Immersion**, the goal was to create an application that generates stickers for WhatsApp. This project involved consuming the IMDb API to get movie information and generating custom stickers based on that data. The course provided an opportunity to dive into practical Java development while solving real-world challenges.
+[![Alura](https://www.alura.com.br/assets/img/alura-share.1647533644.png)](https://www.alura.com.br/)
 
-## Technologies Used
-- **Java 17**: Primary programming language for building the application.
-- **Spring Boot**: Framework used to build the RESTful API.
-- **MongoDB**: NoSQL database to store data.
-- **Heroku**:(Heroku discontinued its free tier) Platform for deploying the application to the cloud.
-- **Git**: Version control for the project code.
+---
+# Alura Stickers
 
-## Key Challenges
-1. **Consuming the IMDb API**: Using the IMDb API's endpoint to fetch popular movie data in real-time.
-2. **Generating Custom Stickers**: Using Java libraries to create images containing movie information like title, release year, and rating.
-3. **Personalizing Stickers**: Adding elements such as emojis, stylized fonts, and text borders to make the stickers more engaging.
-4. **Refactoring and Object-Oriented Programming**: Applying OOP concepts to enhance the code structure and readability.
-5. **Creating a RESTful API**: Building a Spring Boot API to expose the movie data and allow interaction with the app.
-6. **Cloud Deployment**: Deploying the application to Heroku to make it publicly accessible.
+Generate custom stickers from images and movie APIs!
 
+## Description
+This Java project consumes public APIs (such as IMDb and NASA), extracts media information (movies, images), and generates custom stickers from these images. The stickers are saved in the `data/images/output` folder.
+
+## Features
+- Consumes movie (IMDb) and image (NASA) APIs
+- Extracts relevant data (title, image, etc.)
+- Generates stickers from the extracted images
+- Saves stickers to disk
+
+## Project Structure
+```
+├── src/main/java/dielen/        # Main source code
+│   ├── App.java                 # Main class
+│   ├── AppImDb.java             # IMDb API app
+│   ├── CallHttp.java            # HTTP client
+│   ├── Conteudo.java            # Content model
+│   ├── MediaExtractor.java      # Extraction interface
+│   ├── MediaExtractorFactory.java
+│   ├── MediaExtractorImDb.java  # IMDb extractor
+│   ├── MediaExtractorNasa.java  # NASA extractor
+│   └── StickersCreator.java     # Sticker generator
+├── data/images/input/           # Input images
+├── data/images/output/          # Generated stickers
+├── build.gradle                 # Gradle configuration
+```
+
+## How to Run
+1. **Prerequisites:**
+   - Java 17+
+   - Gradle (or use the included wrapper)
+
+2. **Build the project:**
+   ```sh
+   ./gradlew build
+   ```
+
+3. **Run the project:**
+   ```sh
+   ./gradlew run
+   ```
+   Or run the main class directly:
+   ```sh
+   java -cp build/libs/alura-stickers.jar dielen.App
+   ```
+
+4. **Output:**
+   Stickers will be generated in `data/images/output/`.
+
+## Example Usage
+After running the project, check the generated stickers in the `data/images/output/` folder, such as:
+- The Shawshank Redemption.png
+- The Godfather.png
+- ...
+
+## Credits
+Project based on [Alura](https://www.alura.com.br/) courses.
+
+## License
+Educational use only.
